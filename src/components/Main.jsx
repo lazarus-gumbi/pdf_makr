@@ -7,7 +7,7 @@ function Main() {
 
     const fileTypes = ["ZIP"];
 
-    const UPLOAD_ENDPOINT = "https://melusi.pythonanywhere.com/api/make_pdf"
+    const UPLOAD_ENDPOINT = ""
 
     const [file, setFile] = useState(null);
     const [saveFile, setsaveFile] = useState(false)
@@ -35,7 +35,7 @@ function Main() {
     const handleDownload = async () => {
         await axios(
             {
-                url: 'https://melusi.pythonanywhere.com/api/make_pdf',
+                url: '',
                 method: 'GET',
                 responseType: 'blob'
             }).then(
